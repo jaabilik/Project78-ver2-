@@ -1,0 +1,10 @@
+body {
+    background:linear-gradient(#ffd7d7 0%,#f7bc8e 100%);
+    text-align: center;
+}
+#family_img {
+    border: solid;
+    border-color: lavenderblush;
+    width: 400px;
+    height: 500px;
+}

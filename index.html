@@ -1,0 +1,39 @@
+<html>
+    <head> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title> family time :D </title>
+    </head>
+    <body>
+       <h1> My Family! (in a book) </h1>
+       <img id="family_img" src="book.jpg">
+       <br>
+       <h4 id="family_name"></h4>
+       <br> 
+       <button onclick="update()"> Next Family Member </button>
+       <script>
+        var images = ["book.jpg","IMG-3612.jpg","IMG-3159.jpg","IMG-2931.jpg"];
+var names = ["Family Book", "Sridhar Kollipara (my dad)", "Szilvia Szarvas (my mom)", "Jaabili Kollipara (me!!)"]
+var i = 0;
+function update() 
+{
+    document.getElementById("family_img").src = images[i];
+    document.getElementById("family_name").innerHTML = names[i];
+    i++
+    var family_members_in_array = 3
+    if(i > family_members_in_array)
+    {
+        i = 0;
+    }
+}
+
+       </script>
+    </body>
+</html>
